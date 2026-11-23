@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table | Super & Sage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="inner-page">
+
+<header class="site-header">
+    <a class="brand" href="index.html">super <span>&</span> sage</a>
+
+    <nav class="main-nav">
+        <a href="index.html#menu">Our Menu</a>
+        <a href="index.html#story">Our Story</a>
+        <a href="index.html#visit">Visit Us</a>
+    </nav>
+
+    <a class="header-cta" href="index.html">Back to home ↗</a>
+</header>
+
+<main class="inner-wrap">
+
+    <p class="eyebrow">We saved you a seat</p>
+
+    <h1>Book your table.</h1>
+
+    <p>
+        Tell us a little about your visit.
+        Submit your request and our team will get in touch
+        to confirm your reservation.
+    </p>
+
+    <form class="booking-form" id="bookingForm">
+
+        <label>
+            Your name
+            <input name="name" type="text"
+                   placeholder="Full name" required>
+        </label>
+
+        <label>
+            Email address
+            <input name="email" type="email"
+                   placeholder="you@example.com" required>
+        </label>
+
+        <label>
+            Date
+            <input name="date" type="date" required>
+        </label>
+
+        <label>
+            Time
+            <select name="time" required>
+                <option value="">Choose a time</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+            </select>
+        </label>
+
+        <label>
+            Number of guests
+            <select name="guests" required>
+                <option value="">Select guests</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+        </label>
+
+        <label>
+            Phone number
+            <input name="phone" type="tel"
+                   placeholder="Your phone number" required>
+        </label>
+
+        <button class="button button-dark" type="submit">
+            Send booking request ↗
+        </button>
+
+        <p class="form-message" id="formMessage"
+           aria-live="polite"></p>
+
+    </form>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
